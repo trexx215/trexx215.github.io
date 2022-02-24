@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Elite Team Fresno</title>
+    <link href="style.css" rel="stylesheet" >
+</head>
+<body>
+    <header>
+        <img src="Elite Fresno Logo.jpg" alt="ETF logo" width="100" class="logo" >
+        <nav>
+            <ul class="nav__links">
+                <li><a href="#welcome">Welcome</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="#"><button>Contact</button></a>
+    </header>
+
+<!--        <video width="320" height="240" class="center" autoplay muted loop>-->
+<!--            <source src="elite video.mp4" type="video/mp4">-->
+<!--        </video>-->
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="Team Pic.jpg" style="height:500px" >
+<!--   <div class="text">Caption Text</div>-->
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="Collage 1.jpg" style="height:500px">
+<!--   <div class="text">Caption Two</div>-->
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="Colage 2.jpg" style="height:500px">
+<!--   <div class="text">Caption Three</div>-->
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+
+</script>
+<br>
+    <a id="welcome"></a>
+    <h2>Welcome to Elite Team Fresno</h2>
+        <p>
+            Elite Team Fresno is a Brazilian Jiu-Jitsu school that provides high-quality classes from some of the valleys
+            greatest Jiu-Jitsu competitors. Head Coach Marty Robles has been practicing BJJ for 10+ years and received his
+            black belt from Tom Knox, Elite Teams Program director and professor.
+        </p>
+
+
+    <a id="services"></a>
+    <h2>Services</h2>
+    <ul>
+        <li>Adult Gi</li>
+        <li>Adult No-Go</li>
+        <li>Kids Gi</li>
+        <li>Kids No-gi</li>
+        <li>Beginner and Advanced classes</li>
+        <li>Private classes</li>
+        <li>Much Much More!</li>
+    </ul>
+
+
+    <a id="schedule"></a>
+    <h2>Schedule</h2>
+        <p>
+            With a membership, you or your child can enjoy an unlimited amount of classes for their respected age group.
+            You will learn basics and advance jiu-jitsu skills as well as some wrestling and self-defense skills.
+        </p>
+        <p style="text-align:center">
+        <b>Come in now and enjoy a free week of unlimited classes!</b>
+        </p>
+            <img src="Elite Fresno Schedule.png" alt="ETF logo" class="center">
+
+<br>
+   <a id="about"></a>
+   <h2>About</h2>
+        <p>
+            Elite Team Fresno is a Brazilian Jiu-Jitsu school that provides high-quality classes from some of the valleys
+            greatest Jiu-Jitsu competitors. Head Coach Marty Robles has been practicing BJJ for 10+ years and received his
+            black belt from Tom Knox, Elite Teams Program director and professor.
+        </p>
+
+</body>
+</html>
