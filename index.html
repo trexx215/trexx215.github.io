@@ -1,144 +1,345 @@
-<!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Elite Team Fresno</title>
-    <link href="style.css" rel="stylesheet" >
-    <link href="style.css" rel="stylesheet" >
-<style>
-
-     h2{
-        text-align:center
-}
-
-    ul {
-        text-align: center;
-        list-style-position: inside;
-}
-
-
-</style>
-
-<script src="https://kit.fontawesome.com/611459bb70.js" crossorigin="anonymous"></script>
-
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Elite Team Fresno Brazilian Jiu Jitsu</title>
+  <meta name="description" content="Elite Team Fresno Brazilian Jiu Jitsu in Fresno, CA. Schedule, programs, coach, location, and contact info." />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <header>
-        <img src="Elite Fresno Logo.jpg" alt="ETF logo" width="100" class="logo" >
-        <nav>
-            <ul class="nav__links">
-                <li><a href="#welcome">Welcome</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#schedule">Schedule</a></li>
+  <!-- TOP INFO BAR -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <a class="topbar-link" href="tel:+15592880710" aria-label="Call Elite Team Fresno">(559) 288-0710</a>
+      <span class="topbar-sep">•</span>
+      <a class="topbar-link" target="_blank" rel="noopener"
+         href="https://www.google.com/maps/search/?api=1&query=Elite%20Team%20Fresno%20Brazilian%20Jiu%20Jitsu%204177%20W%20Shaw%20Ave%20Suite%20101%20Fresno%20CA%2093722">
+        4177 W Shaw Ave Suite 101, Fresno, CA 93722
+      </a>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Elite Team Fresno Home">
+        <img class="logo" src="assets/Elite Fresno Logo.jpg" alt="Elite Team Fresno Logo" />
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#programs">Programs</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#coach">Coach</a>
+        <a href="#location">Location</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="icon-btn" target="_blank" rel="noopener" href="https://www.instagram.com/elite_team_fresno/" aria-label="Instagram">IG</a>
+        <a class="icon-btn" target="_blank" rel="noopener" href="https://www.facebook.com/profile.php?id=100073587157585" aria-label="Facebook">FB</a>
+        <a class="btn btn-primary" href="#contact">Free Trial</a>
+      </div>
+
+      <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+
+    <div class="mobile-nav" hidden>
+      <a href="#programs">Programs</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#coach">Coach</a>
+      <a href="#location">Location</a>
+      <a href="#contact">Contact</a>
+
+      <div class="mobile-social">
+        <a class="icon-btn" target="_blank" rel="noopener" href="https://www.instagram.com/elite_team_fresno/">Instagram</a>
+        <a class="icon-btn" target="_blank" rel="noopener" href="https://www.facebook.com/profile.php?id=100073587157585">Facebook</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="badge">Brazilian Jiu Jitsu • Kids & Adults • Fresno, CA</div>
+
+          <h1>Elite Team Fresno Brazilian Jiu Jitsu</h1>
+          <p class="lead">
+            Train Jiu Jitsu. Build confidence. Join a real team.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#schedule">View Schedule</a>
+            <a class="btn btn-ghost" href="tel:+15592880710" aria-label="Call or text Elite Team Fresno">Call/Text</a>
+            <a class="btn btn-ghost" target="_blank" rel="noopener"
+               href="https://www.google.com/maps/search/?api=1&query=Elite%20Team%20Fresno%20Brazilian%20Jiu%20Jitsu%204177%20W%20Shaw%20Ave%20Suite%20101%20Fresno%20CA%2093722">
+              Directions
+            </a>
+          </div>
+
+          <div class="quickcards">
+            <div class="qcard">
+              <div class="qtitle">Address</div>
+              <div class="qtext">4177 W Shaw Ave Suite 101, Fresno, CA 93722</div>
+            </div>
+            <div class="qcard">
+              <div class="qtitle">Phone</div>
+              <div class="qtext">(559) 288-0710</div>
+            </div>
+          </div>
+
+          <div class="social-row">
+            <a class="link" target="_blank" rel="noopener" href="https://www.instagram.com/elite_team_fresno/">Instagram</a>
+            <a class="link" target="_blank" rel="noopener" href="https://www.facebook.com/profile.php?id=100073587157585">Facebook</a>
+          </div>
+        </div>
+
+        <!-- ROTATING IMAGES (Collage 1, Collage 2, Team Pic1) -->
+        <div class="hero-media">
+          <div class="rotator" aria-label="Training photos rotating">
+            <img class="rotator-img is-active" src="assets/Collage 1.jpg" alt="Training collage 1" loading="lazy" />
+            <img class="rotator-img" src="assets/Collage 2.jpg" alt="Training collage 2" loading="lazy" />
+            <img class="rotator-img" src="assets/Team Pic1.jpg" alt="Team photo" loading="lazy" />
+          </div>
+
+          <div class="media-note">
+            <span class="dot" aria-hidden="true"></span>
+            Training photos
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAMS -->
+    <section id="programs" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Programs</h2>
+          <p class="muted">Classes for beginners through experienced competitors.</p>
+        </div>
+
+        <div class="grid3">
+          <article class="card">
+            <h3>Adults Gi</h3>
+            <p>Structured training from fundamentals to advanced technique.</p>
+          </article>
+
+          <article class="card">
+            <h3>Adults No-Gi</h3>
+            <p>Modern grappling, control, and submissions without the gi.</p>
+          </article>
+
+          <article class="card">
+            <h3>Kids BJJ</h3>
+            <p>Confidence, discipline, and coordination in a safe environment.</p>
+          </article>
+
+          <article class="card">
+            <h3>Fundamentals</h3>
+            <p>Beginner-friendly classes focused on core movements and concepts.</p>
+          </article>
+
+          <article class="card">
+            <h3>Wrestling</h3>
+            <p>Takedowns, scrambling, and standing skills that carry over to BJJ.</p>
+          </article>
+
+          <article class="card">
+            <h3>Advanced / Competition</h3>
+            <p>Higher pace rounds, strategy, and sharpening your game.</p>
+          </article>
+
+          <article class="card">
+            <h3>Women’s Class</h3>
+            <p>If offered: a supportive environment to learn and grow on the mats.</p>
+          </article>
+
+          <article class="card">
+            <h3>Private Lessons</h3>
+            <p>Personal coaching for faster improvement and specific goals.</p>
+          </article>
+
+          <article class="card">
+            <h3>And More</h3>
+            <p>Ask about the best class to start with and current offerings.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCHEDULE -->
+    <section id="schedule" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Schedule</h2>
+        </div>
+
+        <div class="schedule-card">
+          <img class="schedule-img" src="assets/schedule.jpg?v=1" alt="Class schedule" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- COACH -->
+    <section id="coach" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Coach</h2>
+          <p class="muted">
+            Head Coach Marty Robles has been practicing BJJ for 10+ years and received his black belt from Tom Knox.
+          </p>
+        </div>
+
+        <div class="coach-grid">
+          <div class="coach-photo">
+            <img src="assets/marty.jpg" alt="Head Coach Marty Robles" loading="lazy" />
+          </div>
+
+          <div class="card coach-card">
+            <h3>Head Coach Marty Robles</h3>
+            <p>
+              Elite Team Fresno is a Brazilian Jiu-Jitsu school that provides high-quality classes and a strong team culture.
+              All levels are welcome — from first class beginners to experienced competitors.
+            </p>
+
+            <div class="coach-points">
+              <span class="chip">Beginner-friendly</span>
+              <span class="chip">Kids & Adults</span>
+              <span class="chip">Gi & No-Gi</span>
+              <span class="chip">Fundamentals</span>
+              <span class="chip">Wrestling</span>
+            </div>
+
+            <div class="coach-cta">
+              <a class="btn btn-primary" href="#contact">Ask about a Trial</a>
+              <a class="btn btn-ghost" href="tel:+15592880710" aria-label="Call or text Elite Team Fresno">Call/Text</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOCATION -->
+    <section id="location" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Location</h2>
+          <p class="muted">Come in 10 minutes early for your first class.</p>
+        </div>
+
+        <div class="grid2">
+          <div class="card">
+            <h3>Elite Team Fresno Brazilian Jiu Jitsu</h3>
+            <p class="muted">
+              4177 W Shaw Ave Suite 101<br />
+              Fresno, CA 93722
+            </p>
+
+            <div class="location-actions">
+              <a class="btn btn-primary" target="_blank" rel="noopener"
+                 href="https://www.google.com/maps/search/?api=1&query=Elite%20Team%20Fresno%20Brazilian%20Jiu%20Jitsu%204177%20W%20Shaw%20Ave%20Suite%20101%20Fresno%20CA%2093722">
+                Get Directions
+              </a>
+              <a class="btn btn-ghost" href="tel:+15592880710" aria-label="Call or text Elite Team Fresno">Call/Text</a>
+            </div>
+
+            <div class="social-row">
+              <a class="link" target="_blank" rel="noopener" href="https://www.instagram.com/elite_team_fresno/">Instagram</a>
+              <a class="link" target="_blank" rel="noopener" href="https://www.facebook.com/profile.php?id=100073587157585">Facebook</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>What to bring</h3>
+            <ul class="list">
+              <li>Comfortable workout clothes</li>
+              <li>Water bottle</li>
+              <li>Arrive 10 minutes early</li>
+              <li>Questions? Call/text us</li>
             </ul>
-        </nav>
-        <a class="cta" href="Contact info.html"><button>Contact</button></a>
-    </header>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<!--        <video width="320" height="240" class="center" autoplay muted loop>-->
-<!--            <source src="elite video.mp4" type="video/mp4">-->
-<!--        </video>-->
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="contact-card">
+          <div class="contact-copy">
+            <h2>Ready to try a class?</h2>
+            <p class="muted">
+              Call or text and we’ll help you pick the best class to start.
+            </p>
+          </div>
 
-<div class="slideshow-container">
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="tel:+15592880710" aria-label="Call or text Elite Team Fresno">Call/Text (559) 288-0710</a>
+            <a class="btn btn-ghost" target="_blank" rel="noopener"
+               href="https://www.google.com/maps/search/?api=1&query=Elite%20Team%20Fresno%20Brazilian%20Jiu%20Jitsu%204177%20W%20Shaw%20Ave%20Suite%20101%20Fresno%20CA%2093722">
+              Directions
+            </a>
+            <a class="btn btn-ghost" target="_blank" rel="noopener" href="https://www.instagram.com/elite_team_fresno/">Instagram</a>
+            <a class="btn btn-ghost" target="_blank" rel="noopener" href="https://www.facebook.com/profile.php?id=100073587157585">Facebook</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-<div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <img src="Team Pic1.jpg" style="height:500px" >
-<!--   <div class="text">Caption Text</div>-->
-</div>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="footer-title">Elite Team Fresno Brazilian Jiu Jitsu</div>
+        <div class="muted">4177 W Shaw Ave Suite 101, Fresno, CA 93722</div>
+        <a class="link" href="tel:+15592880710" aria-label="Call Elite Team Fresno">(559) 288-0710</a>
+      </div>
 
-<div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="Collage 1.jpg" style="height:500px">
-<!--   <div class="text">Caption Two</div>-->
-</div>
+      <div class="footer-links">
+        <a class="link" href="#top">Back to top</a>
+        <a class="link" href="#schedule">Schedule</a>
+        <a class="link" href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
 
-<div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
-  <img src="Colage 2.jpg" style="height:500px">
-<!--   <div class="text">Caption Three</div>-->
-</div>
+  <script>
+    // Mobile menu
+    const menuBtn = document.querySelector(".menu-btn");
+    const mobileNav = document.querySelector(".mobile-nav");
 
-</div>
-<br>
+    menuBtn.addEventListener("click", () => {
+      const hidden = mobileNav.hasAttribute("hidden");
+      if (hidden) {
+        mobileNav.removeAttribute("hidden");
+        menuBtn.setAttribute("aria-expanded", "true");
+      } else {
+        mobileNav.setAttribute("hidden", "");
+        menuBtn.setAttribute("aria-expanded", "false");
+      }
+    });
 
-<div style="text-align:center">
-  <span class="dot"></span>
-  <span class="dot"></span>
-  <span class="dot"></span>
-</div>
+    // Auto-close mobile menu after clicking a link
+    document.querySelectorAll(".mobile-nav a").forEach(a => {
+      a.addEventListener("click", () => {
+        mobileNav.setAttribute("hidden", "");
+        menuBtn.setAttribute("aria-expanded", "false");
+      });
+    });
 
-<script>
-var slideIndex = 0;
-showSlides();
+    // Rotating hero images (every 4 seconds)
+    const imgs = Array.from(document.querySelectorAll(".rotator-img"));
+    let idx = 0;
 
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 3000); // Change image every 2 seconds
-}
-
-
-</script>
-<br>
-    <a id="welcome"></a>
-    <h2>Welcome to Elite Team Fresno</h2>
-        <p>
-            Elite Team Fresno is a Brazilian Jiu-Jitsu school that provides high-quality classes from some of the valleys
-            greatest Jiu-Jitsu competitors. Head Coach Marty Robles has been practicing BJJ for 10+ years and received his
-            black belt from Tom Knox, Elite Teams Program director and professor.
-        </p>
-
-            <img src="marty.jpg" alt="smarty" width="500px" class="center">
-<hr>
-    <a id="services"></a>
-    <h2>Services</h2>
-    <ul>
-        <li>Adult Gi</li>
-        <li>Adult No-Gi</li>
-        <li>Kids Gi</li>
-        <li>Kids No-Gi</li>
-        <li>Beginner and Advanced Classes</li>
-        <li>Private Classes</li>
-        <li>Much Much More!</li>
-    </ul>
-<br>
-<hr>
-
-    <a id="schedule"></a>
-    <h2>Schedule</h2>
-            <img src="Elite Fresno Schedule.jpg" alt="ETF logo" class="center">
-    <p>
-            With a membership, you or your child can enjoy an unlimited amount of classes for their respected age group.
-            You will learn basics and advance jiu-jitsu skills as well as some wrestling and self-defense skills.
-        </p>
-        <p style="text-align:center">
-        <b>Come in now and ask about our complimentary trail class!</b>
-        </p>
-<br>
-<hr>
-
-<br><br><br>
-
+    setInterval(() => {
+      imgs[idx].classList.remove("is-active");
+      idx = (idx + 1) % imgs.length;
+      imgs[idx].classList.add("is-active");
+    }, 4000);
+  </script>
 </body>
-<footer style="text-align:center;background:black;color:white">
-    <br><br>
-  <p>Follow Us</p>
-    <a href="https://www.facebook.com/profile.php?id=100073587157585" style="color:white" ><i class="fa-brands fa-facebook-f"></i></a>
-    <a href="https://www.instagram.com/elite_team_fresno/" style="color:white" ><i class="fa-brands fa-instagram"></i></a>
-  <p>Address:</p>
-    <a style="color:white" href="https://www.google.com/search?tbs=lf:1,lf_ui:14&tbm=lcl&sxsrf=APq-WBviCKNaX3aEauUKmW433bwLAiMdXQ:1645811775712&q=elite+team+fresno&rflfq=1&num=10&rldimm=3572070298226151470#">4177 W Shaw Ave Suite 111<br>Fresno, CA 93722</a>
-    <br><br><br><br>
-</footer>
 </html>
